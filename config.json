@@ -1,0 +1,7 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "postgres://grateful_user:1CXvTipepfhur1tu6z6qK5oRX3LZPv5H@dpg-cqeg448gph6c73aodk40-a:5432/grateful",
+        "prod_uri": "postgres://grateful_user:1CXvTipepfhur1tu6z6qK5oRX3LZPv5H@dpg-cqeg448gph6c73aodk40-a:5432/grateful"
+    }
+}

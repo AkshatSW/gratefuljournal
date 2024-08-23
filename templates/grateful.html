@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<section class="mt-2 mb-10">
+    <article>
+        <div class="wrapper">
+            <ul class="marquee">
+                {% for users in userDetails %}
+                <li></li>
+                <li>{{users.Name}} is grateful for {{users.Grateful_for}}</li>
+                {% endfor %}
+            </ul>
+
+            <ul class="marquee2">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </di>
+    </article>
+</section>
+
+<section class="m-10">
+
+    <div class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+
+
+        <div class="px-6 py-4">
+            <h2 class="text-3xl font-bold text-center text-gray-700 dark:text-white"> <span
+                    class="text-red-600">Zariyaa</span> Gratefulness Journal</h2>
+
+            <h3 class="mt-1 text-xl font-medium text-center text-gray-600 dark:text-gray-200">What are you greatful for
+                today?</h3>
+
+            <form method="POST" action="">
+                <div class="w-full mt-4">
+                    <input
+                        class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                        type="text" name="Name" id="Name" placeholder="Name">
+                </div>
+                <div class="w-full mt-4">
+                    <input
+                        class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                        type="text" name="Grateful_for" id="Grateful_for" placeholder="Grateful_for?">
+                </div>
+                <div class="flex items-center justify-center mt-4">
+                    <input
+                        class="px-4 py-2 leading-5 text-white transition-colors duration-300 transform bg-red-600 rounded hover:bg-red-700 focus:outline-none"
+                        type="submit" value="submit" placeholder="test">
+                </div>
+            </form>
+            <br>
+            <div class="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-600">
+                <span class="text-sm text-gray-700 dark:text-gray-200">Admin? </span>
+
+                <a href="#" class="mx-2 text-sm font-bold text-red-700 dark:text-red-400 hover:underline">Login</a>
+            </div>
+        </div>
+</section>
+
+
+{% endblock %}
